@@ -39,8 +39,8 @@ vim.keymap.set('n', '<C-d>', '<C-d>zz', { desc = 'Go down half a page and center
 vim.keymap.set('n', 'n', 'nzz', { desc = 'Jump to the next occurrence and center' })
 vim.keymap.set('n', 'N', 'Nzz', { desc = 'Jump to the previous occurrence and center' })
 
--- Toggle git blame
-vim.keymap.set('n', '<leader>gb', '<cmd>Gitsigns toggle_current_line_blame<CR>', { desc = 'Toggle git blame' })
+-- Toggle floating terminal
+-- vim.keymap.set('n', '<C-`>', '<cmd>ToggleTerm direction=float<CR>', { desc = 'Toggle floating terminal' })
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
