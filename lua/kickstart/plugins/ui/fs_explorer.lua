@@ -11,15 +11,21 @@ return {
   },
   cmd = 'Neotree',
   keys = {
-    { '\\', ':Neotree reveal<CR>', desc = 'NeoTree reveal', silent = true },
+    { '`', ':Neotree reveal<CR>', desc = 'NeoTree reveal', silent = true },
   },
   opts = {
     filesystem = {
       window = {
         mappings = {
-          ['\\'] = 'close_window',
+          ['`'] = 'close_window',
         },
       },
+      filtered_items = {
+        hide_dotfiles = false,
+        hide_gitignored = false,
+      },
+      -- Use neo-tree instead of netrw in expanded mode
+      hijack_netrw_behavior = 'open_current',
     },
   },
 }

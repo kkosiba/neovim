@@ -39,9 +39,6 @@ vim.keymap.set('n', '<C-d>', '<C-d>zz', { desc = 'Go down half a page and center
 vim.keymap.set('n', 'n', 'nzz', { desc = 'Jump to the next occurrence and center' })
 vim.keymap.set('n', 'N', 'Nzz', { desc = 'Jump to the previous occurrence and center' })
 
--- Toggle nvim-tree
-vim.keymap.set('n', '`', '<cmd>Neotree toggle<CR>', { desc = 'Toggle neo-tree' })
-
 -- Toggle git blame
 vim.keymap.set('n', '<leader>gb', '<cmd>Gitsigns toggle_current_line_blame<CR>', { desc = 'Toggle git blame' })
 
