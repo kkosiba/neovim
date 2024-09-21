@@ -43,7 +43,7 @@ vim.keymap.set('n', 'N', 'Nzz', { desc = 'Jump to the previous occurrence and ce
 vim.keymap.set('n', '`', '<cmd>Neotree toggle<CR>', { desc = 'Toggle neo-tree' })
 
 -- Toggle git blame
-vim.keymap.set('n', '<leader>gb', '<cmd>Gitsigns toggle_current_line_blame<CR>', { desc = 'Open git blame' })
+vim.keymap.set('n', '<leader>gb', '<cmd>Gitsigns toggle_current_line_blame<CR>', { desc = 'Toggle git blame' })
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
