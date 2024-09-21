@@ -129,6 +129,7 @@ require('lazy').setup({
 
   require 'kickstart.plugins.ui.command_launcher',
   require 'kickstart.plugins.ui.git',
+  require 'kickstart.plugins.ui.lazygit',
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
