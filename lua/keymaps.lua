@@ -16,12 +16,6 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 -- or just use <C-\><C-n> to exit terminal mode
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
--- TIP: Disable arrow keys in normal mode
--- vim.keymap.set('n', '<left>', '<cmd>echo "Use h to move!!"<CR>')
--- vim.keymap.set('n', '<right>', '<cmd>echo "Use l to move!!"<CR>')
--- vim.keymap.set('n', '<up>', '<cmd>echo "Use k to move!!"<CR>')
--- vim.keymap.set('n', '<down>', '<cmd>echo "Use j to move!!"<CR>')
-
 -- Keybinds to make split navigation easier.
 --  Use CTRL+<hjkl> to switch between windows
 --
@@ -38,9 +32,6 @@ vim.keymap.set('n', '<C-d>', '<C-d>zz', { desc = 'Go down half a page and center
 -- Vertically center next/previous search occurrences
 vim.keymap.set('n', 'n', 'nzz', { desc = 'Jump to the next occurrence and center' })
 vim.keymap.set('n', 'N', 'Nzz', { desc = 'Jump to the previous occurrence and center' })
-
--- Toggle floating terminal
--- vim.keymap.set('n', '<C-`>', '<cmd>ToggleTerm direction=float<CR>', { desc = 'Toggle floating terminal' })
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
