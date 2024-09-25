@@ -62,6 +62,13 @@ return {
         --  To jump back, press <C-t>.
         map('gd', require('telescope.builtin').lsp_definitions, '[G]oto [D]efinition')
 
+        map('gpd', "<cmd> lua require('goto-preview').goto_preview_definition({ noremap = true })<cr>", '[P]review [D]efinition')
+        map('gpt', "<cmd>lua require('goto-preview').goto_preview_type_definition()<cr>", '[G]otoo [P]review [T]ype')
+        map('gpi', "<cmd>lua require('goto-preview').goto_preview_implementation()<cr>", '[G]oto [P]review [I]mplementation')
+        map('gpD', "<cmd>lua require('goto-preview').goto_preview_declaration()<cr>", '[G]oto [P]review [D]eclaration')
+        map('gpr', "<cmd>lua require('goto-preview').goto_preview_references()<cr>", '[G]oto [P]review [R]eferences')
+        map('gpc', "<cmd>lua require('goto-preview').close_all_win()<cr>", '[G]oto [P]review [C]lose')
+
         -- Find references for the word under your cursor.
         map('gr', require('telescope.builtin').lsp_references, '[G]oto [R]eferences')
 

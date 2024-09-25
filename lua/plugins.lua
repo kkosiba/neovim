@@ -41,6 +41,7 @@ require('lazy').setup({
   require 'kickstart.plugins.lsp.main',
   require 'kickstart.plugins.lsp.autoformat',
   require 'kickstart.plugins.lsp.autocompletion',
+  require 'kickstart.plugins.lsp.goto_preview',
 
   -- UI & theme
   require 'kickstart.plugins.ui.theme',
