@@ -1,0 +1,5 @@
+[submodule "work"]
+	path = work
+	url = git@github.com:kkosiba/dotfiles-work.git
+	update = merge
+	branch = main
